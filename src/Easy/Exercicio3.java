@@ -15,8 +15,8 @@ public class Exercicio3 {
 
     public static void main(String[] args) {
 
-        String valor1 = JOptionPane.showInputDialog("Informe um valor podendo ser número ou letras:");
-        String valor2 = JOptionPane.showInputDialog("Informe outro valor podendo ser número ou letras:");
+        String valor1 = JOptionPane.showInputDialog("Informe um valor podendo ser número ou letra:");
+        String valor2 = JOptionPane.showInputDialog("Informe outro valor podendo ser número ou letra:");
 
         System.out.println("Os valores informados foram: " + valor1 + " " + valor2 +
                 "\nAgora trocados: " + valor2 + " " + valor1);
