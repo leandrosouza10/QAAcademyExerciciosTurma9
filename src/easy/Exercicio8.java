@@ -2,6 +2,19 @@ package easy;
 
 import javax.swing.*;
 
+/*História de Usuário: Cálculo do Salário Líquido com Imposto de Renda
+        Como usuário, desejo inserir meu salário para que um algoritmo calcule e exiba o valor do salário bruto, do salário líquido e do imposto de renda a
+        ser pago, seguindo a tabela de alíquotas e deduções.
+Critérios de Aceite:
+        ○ Como usuário, posso fornecer o valor do meu salário como entrada para o algoritmo.
+        ○ O algoritmo deve calcular o valor do salário bruto, considerando o salário fornecido pelo usuário.
+        ○ O sistema deve calcular o valor do imposto de renda utilizando a fórmula:
+        IR = (Salário * Alíquota) - Dedução,
+        conforme a tabela de alíquotas e deduções fornecida.
+        ○ O salário líquido deve ser calculado subtraindo o valor do imposto de renda do salário bruto.
+        ○ O sistema deve aplicar a alíquota e dedução correspondentes ao intervalo do salário bruto, conforme a tabela fornecida.
+        ○ O sistema deve exibir de forma clara e legível o valor do salário bruto, do salário líquido e do imposto de renda a ser pago.*/
+
 public class Exercicio8 {
 
     public static void main(String[] args) {
