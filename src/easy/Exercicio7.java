@@ -1,4 +1,4 @@
-package Easy;
+package easy;
 
 import javax.swing.*;
 
@@ -24,12 +24,12 @@ public class Exercicio7 {
                 "de R$ 4.000,04 até R$ 7.786,02\t14,0 %");
         System.out.println("=========================================================================");
 
-        double salario = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do seu salário bruto"));
+        double salario = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do seu salário bruto:"));
 
 
-        if (salario <= 1412) {
+        if (salario > 0.00 && salario <= 1412) {
             double inss = salario * 0.075;
-            System.out.println("A contribuição para o INSS será de R$ " +inss);
+            System.out.println("A contribuição para o INSS será de R$ " + inss);
 
         }
         if (salario >= 1412.01 && salario <= 2668.68) {
