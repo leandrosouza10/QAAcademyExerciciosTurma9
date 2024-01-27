@@ -25,27 +25,25 @@ public class Exercicio7 {
         System.out.println("=========================================================================");
 
         double salario = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do seu salário bruto:"));
+        double inss = 0;
 
-
-        if (salario > 0.00 && salario <= 1412) {
-            double inss = salario * 0.075;
-            System.out.println("A contribuição para o INSS será de R$ " + inss);
+        if (salario <= 1412) {
+            inss = salario * 0.075;
 
         }
         if (salario >= 1412.01 && salario <= 2668.68) {
-            double inss = salario * 0.09;
-            System.out.println("A contribuição para o INSS será de R$ " + inss);
+            inss = salario * 0.09;
 
         }
         if (salario >= 2668.69 && salario <= 4000.03) {
-            double inss = salario * 0.12;
-            System.out.println("A contribuição para o INSS será de R$ " + inss);
+            inss = salario * 0.12;
 
         }
         if (salario >= 4000.04 && salario <= 7786.02) {
-            double inss = salario * 0.14;
-            System.out.println("A contribuição para o INSS será de R$ " + inss);
+            inss = salario * 0.14;
+
         }
+        System.out.println("A contribuição para o INSS será de R$ " + inss);
 
     }
 
