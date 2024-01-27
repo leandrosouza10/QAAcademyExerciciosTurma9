@@ -45,7 +45,7 @@ public class Exercicio7 {
         } if( salario > 7786.02 ){
             inss = 1090.04;
         }
-        System.out.println("A contribuição para o INSS será de R$ " + inss);
+        System.out.printf("A contribuição para o INSS será de R$ %.2f ",inss);
 
     }
 

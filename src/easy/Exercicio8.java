@@ -30,7 +30,7 @@ public class Exercicio8 {
 
         double salario = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do seu salário R$:"));
         double ir = 0;
-        if (salario > 0.00 && salario <= 2112) {
+        if ( salario <= 2112) {
             System.out.println("Isento de imposto de renda:");
         }
         if (salario >= 2112.01 && salario <= 2826.65) {
@@ -50,7 +50,10 @@ public class Exercicio8 {
 
         }
 
-        System.out.println("O seu salário é R$ " + salario + ", e o imposto de renda a ser pago será de R$ " + ir);
+        System.out.println("O seu salário bruto é R$ " + salario);
+        System.out.printf("O imposto de renda a ser pago será de R$ %.2f", ir);
+        System.out.printf("\nSeu salario liquido será de R$ %.2f", (salario - ir));
+
 
     }
 
