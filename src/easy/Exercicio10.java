@@ -29,12 +29,20 @@ public class Exercicio10 {
         System.out.println("=========================================================================================\n");
 
         double valorInvest = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do investimento R$: "));
-        double montanteJuros = valorInvest * 0.12 * 10;
-        double totalAcumulado = valorInvest + montanteJuros;
+        double montanteJuros=0;
+        double totalAcumulado;
 
         System.out.println("Valor do investimento R$ " + valorInvest);
-        System.out.println("Montante dos juros R$ " + montanteJuros);
-        System.out.println("Valor total acumulado com juros R$ " + totalAcumulado);
+
+        for (int i = 1; i <=10; i++){
+        montanteJuros = valorInvest * 0.12 + montanteJuros;
+        totalAcumulado = valorInvest + montanteJuros;
+            System.out.println("Montante dos juros R$ " + montanteJuros);
+            System.out.println("Valor total acumulado com juros R$ " + totalAcumulado);
+        }
+
+
+
 
     }
 

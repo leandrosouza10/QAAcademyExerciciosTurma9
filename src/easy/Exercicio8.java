@@ -29,27 +29,28 @@ public class Exercicio8 {
         System.out.println("=====================================================================");
 
         double salario = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do seu salário R$:"));
-
+        double ir = 0;
         if (salario > 0.00 && salario <= 2112) {
             System.out.println("Isento de imposto de renda:");
         }
         if (salario >= 2112.01 && salario <= 2826.65) {
-            double ir = (salario * 0.075) - 158.40;
-            System.out.println("O seu salário é R$ " + salario + ", e o imposto de renda a ser pago será de R$ " + ir);
-        }
-        if (salario >= 2826.66 && salario <= 3751.05) {
-            double ir = (salario * 0.15) - 370.40;
-            System.out.println("O seu salário é R$ " + salario + ", e o imposto de renda a ser pago será de R$ " + ir);
-        }
-        if (salario >= 3751.06 && salario <= 4664.68) {
-            double ir = (salario * 0.225) - 651.73;
-            System.out.println("O seu salário é R$ " + salario + ", e o imposto de renda a ser pago será de R$ " + ir);
-        }
-        if (salario >= 4664.69) {
-            double ir = (salario * 0.275) - 884.96;
-            System.out.println("O seu salário é R$ " + salario + ", e o imposto de renda a ser pago será de R$ " + ir);
+            ir = salario * 0.075 - 158.40;
 
         }
+        if (salario >= 2826.66 && salario <= 3751.05) {
+            ir = salario * 0.15 - 370.40;
+
+        }
+        if (salario >= 3751.06 && salario <= 4664.68) {
+            ir = salario * 0.225 - 651.73;
+
+        }
+        if (salario >= 4664.69) {
+            ir = salario * 0.275 - 884.96;
+
+        }
+
+        System.out.println("O seu salário é R$ " + salario + ", e o imposto de renda a ser pago será de R$ " + ir);
 
     }
 

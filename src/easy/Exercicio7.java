@@ -42,6 +42,8 @@ public class Exercicio7 {
         if (salario >= 4000.04 && salario <= 7786.02) {
             inss = salario * 0.14;
 
+        } if( salario > 7786.02 ){
+            inss = 1090.04;
         }
         System.out.println("A contribuição para o INSS será de R$ " + inss);
 
