@@ -21,11 +21,19 @@ public class Exercicio9 {
 
         int numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um número:"));
 
-        for (int i = 1; i <= 10; i++) {
-            int resultado = numero * i;
-            System.out.println(numero + " X " + i + " = " + resultado);
+        if (numero <= 0 || numero > 10) {
+
+            System.out.println("Número invalido");
+
+        } else {
+            for (int i = 1; i <= 10; i++) {
+                int resultado = numero * i;
+                System.out.println(numero + " X " + i + " = " + resultado);
+
+            }
 
         }
+
 
         System.out.println("=====================================================");
 
