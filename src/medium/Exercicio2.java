@@ -16,10 +16,12 @@ public class Exercicio2 {
 
     public static void main(String[] args) {
         double juros = 0.12, valorTotal = 0.0;
+        double limite = 10;
+
         double valorInvest = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do investimento: "));
         valorTotal = valorInvest;
 
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= limite; i++) {
             valorTotal = (valorTotal * juros) + valorTotal;
             System.out.printf("Valor Total R$ %.2f\n", valorTotal);
         }
