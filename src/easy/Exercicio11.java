@@ -14,11 +14,12 @@ public class Exercicio11 {
 
         int numero = Integer.parseInt((JOptionPane.showInputDialog("Digite um número: ")));
 
-        for (int i = 0; i <= 100; i++) {
+        for (int i = 1; i <= 100; i++) {
             numero = numero + 2;
             System.out.println(numero + " + 2");
 
         }
+        System.out.println("Fim das Iterações!!");
     }
 }
 
