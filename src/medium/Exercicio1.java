@@ -1,6 +1,12 @@
 package medium;
 
-/*Faça um algoritmo para verificar e exibir de 0 a 100, quais são os números pares ou impares.*/
+/* Historia de usuário: Como um usuário, desejo um algoritmo que verifique e exiba os números de 0 a 100, identificando
+        quais são pares e ímpares.
+   Critérios de Aceite:
+        ○ O programa deve percorrer os números inteiros de 0 a 100.
+        ○ Para cada número, o algoritmo deve identificar se é par ou ímpar.
+        ○ A exibição dos resultados deve ser organizada e fácil de entender.
+        ○ Caso um número seja zero, o programa deve tratá-lo corretamente e indicar se é par ou ímpar.*/
 
 
 public class Exercicio1 {
