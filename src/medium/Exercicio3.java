@@ -22,7 +22,7 @@ public class Exercicio3 {
         int soma = 0;
 
         for (int i = 0; i <= 1000; i++) {
-            soma = i + soma;
+            soma += i;
             System.out.println("Iteração : " + i + " | Soma: " + soma);
             if (soma >= limite) {
                 break;

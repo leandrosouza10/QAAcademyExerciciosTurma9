@@ -37,7 +37,7 @@ public class Exercicio10 {
         System.out.println("Valor do investimento R$ " + valorInvest);
 
         for (int i = 1; i <= limite; i++) {
-            montanteJuros = valorInvest * juros + montanteJuros;
+            montanteJuros += valorInvest * juros;
             totalAcumulado = valorInvest + montanteJuros;
             System.out.printf("\nMontante dos juros R$ %.2f", (montanteJuros));
             System.out.printf("\nValor total acumulado com juros R$ %.2f ", totalAcumulado);

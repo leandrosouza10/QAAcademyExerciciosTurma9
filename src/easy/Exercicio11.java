@@ -24,7 +24,7 @@ public class Exercicio11 {
         int numero = Integer.parseInt((JOptionPane.showInputDialog("Digite um número: ")));
 
         for (int i = 1; i <= 100; i++) {
-            numero = numero + 2;
+            numero += 2;
             System.out.println(numero + " + 2");
 
         }

@@ -38,13 +38,13 @@ public class Exercicio2 {
         valorTotal = valorInvest;
 
         for (int i = 1; i <= limite; i++) {
-            valorTotal = (valorTotal * juros) + valorTotal;
+            valorTotal += (valorTotal * juros);
             System.out.printf("Valor Total R$ %.2f\n", valorTotal);
         }
 
-        System.out.printf("Valor do investimento R$ %.2f\n", valorInvest);
-        System.out.printf("Valor do investimento R$ %.2f\n", (valorTotal - valorInvest));
-        System.out.printf("Valor do investimento R$ %.2f", valorTotal);
+        System.out.printf("Valor do Investimento inicial R$ %.2f\n", valorInvest);
+        System.out.printf("Juros Acumulados R$ %.2f\n", (valorTotal - valorInvest));
+        System.out.printf("Valor do total do investimento R$ %.2f", valorTotal);
 
     }
 }
