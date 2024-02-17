@@ -14,13 +14,16 @@ public class Exercicio6 {
     public static void main(String[] args) {
 
         int fatorial = Integer.parseInt(JOptionPane.showInputDialog("Digite um número inteiro:"));
-        System.out.println("Número digitado: " + fatorial);
+
         for (int i = fatorial; i > 1; i--)
             fatorial *= (i - 1);
+
         if (fatorial == 0) {
-            System.out.println("1");
+            System.out.println("O fatorial digitado é 1");
+        } else {
+            System.out.println("O fatorial do número digitado: " + fatorial);
         }
-        System.out.println(fatorial);
+
     }
 
 
